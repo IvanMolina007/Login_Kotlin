@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "23569719178",
+    "project_id": "fir-kotin-4697d",
+    "storage_bucket": "fir-kotin-4697d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23569719178:android:200ff0394f160e11677273",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23569719178-577tld28a8009nbqommb240vf30hua01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBadGRg2YAFP-0ZdCQdlXLmva2HlVe47kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23569719178-577tld28a8009nbqommb240vf30hua01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23569719178:android:d3d7c6f73e8a6857677273",
+        "android_client_info": {
+          "package_name": "com.example.login_kotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23569719178-577tld28a8009nbqommb240vf30hua01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBadGRg2YAFP-0ZdCQdlXLmva2HlVe47kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23569719178-577tld28a8009nbqommb240vf30hua01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
