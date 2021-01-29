@@ -131,12 +131,17 @@
 
             </LinearLayout>
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_weight="1" />
+
             <TextView
                 android:id="@+id/textViewUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Ejemplo"
+                android:text="   Ejemplo"
                 android:textColor="#FFFFFF" />
 
         </LinearLayout>
