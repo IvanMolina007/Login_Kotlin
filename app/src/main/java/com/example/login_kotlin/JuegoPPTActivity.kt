@@ -82,6 +82,10 @@ class JuegoPPTActivity : AppCompatActivity() {
 
         }
 
+        buttonAtrasJuego.setOnClickListener {
+            finish()
+        }
+
     }
 
     private fun showInicio() {
