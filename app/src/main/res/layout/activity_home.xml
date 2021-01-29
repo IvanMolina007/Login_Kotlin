@@ -18,7 +18,11 @@
             android:text="MENU"
             android:textAlignment="center"
             android:textColor="#03A9F4"
-            android:textSize="30sp" />
+            android:textSize="50sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -26,28 +30,30 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <ImageButton
+            <Button
                 android:id="@+id/buttonGoogle"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:scaleType="fitCenter"
-                android:src="@drawable/botongoogleinicio" />
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/botongoogleinicio"
+                android:text="   Google"
+                android:textAlignment="textStart"
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/buttonEmail"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/correoimagen"
                 android:text="EMAIL/CONTRASEÑA"
                 android:textSize="30sp" />
 
             <Button
                 android:id="@+id/buttonAnonimo"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1"
-                android:text="ANONIMO"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/anonimo"
+                android:text="   ANONIMO"
+                android:textAlignment="textStart"
                 android:textSize="30sp" />
         </LinearLayout>
     </LinearLayout>
