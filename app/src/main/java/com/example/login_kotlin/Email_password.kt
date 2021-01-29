@@ -70,6 +70,10 @@ class Email_password : AppCompatActivity() {
             sesion()
         }
 
+        buttonAtras.setOnClickListener {
+            finish()
+        }
+
     }
 
     private fun sesion() {
