@@ -2,11 +2,13 @@ package com.example.login_kotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_juego_p_p_t.*
 import java.util.*
 
 class JuegoPPTActivity : AppCompatActivity() {
 
+    private var contador = 5
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_juego_p_p_t)
@@ -16,7 +18,12 @@ class JuegoPPTActivity : AppCompatActivity() {
         if  (servicio == 0) {
             textViewUsuario.text = "Basico: " + email
         } else {
-            textViewUsuario.text = "Google: " + email
+            if (servicio == 1) {
+                textViewUsuario.text = "Google: " + email
+            } else {
+                showInicio()
+                textViewUsuario.text = "Anonimo Iniciado, le quedan 5 intentos"
+            }
         }
 
         //numero = 0 Piedra || numero = 1 Papel || numero = 2 Tijeras
@@ -64,8 +71,26 @@ class JuegoPPTActivity : AppCompatActivity() {
                     }
                 }
             }
+
+            if (servicio == 2) {
+                contador--
+                textViewUsuario.text = "Anonimo Iniciado, le quedan " + contador + " intentos"
+                if (contador == 0) {
+                    finish()
+                }
+            }
+
         }
 
+    }
+
+    private fun showInicio() {
+        val builder = AlertDialog.Builder(this);
+        builder.setTitle("Tiene 5 Jugadas anonimas")
+        builder.setMessage("Al ser anonimo solo puede hacer 5 jugadas gratis, si quiere seguir inicie sesion con alguno de los metodos")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
     }
 
 

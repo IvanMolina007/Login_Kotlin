@@ -43,7 +43,11 @@ class HomeActivity : AppCompatActivity() {
             }
 
             buttonAnonimo.setOnClickListener {
-
+                FirebaseAuth.getInstance().signInAnonymously()
+                val nextActivityIntent = Intent(this, JuegoPPTActivity::class.java).apply {
+                    putExtra("servicio", 2)
+                }
+                startActivity(nextActivityIntent)
             }
         }
 
